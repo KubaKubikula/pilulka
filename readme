@@ -1,0 +1,26 @@
+Podmínky splnění domácího úkolu:
+Pro využití knihoven a balíčků 3tích stran prosím využij composer - https://getcomposer.org/ a https://packagist.org/
+
+PHP musí být ve strict type módu verze 7.1 a výše.
+Je jedno, jestli bude použit docker / vagrant / nebo přímá instalaci PHP a Apache/Nginx na svém stroji.
+Je nám jedno, jestli se použije nějaký framework, či se použijí šikovně poskládané komponenty 3tích stran.
+Zdrojové kódy musí být na githubu - tak abychom je mohli projít.
+Projekt musí mít manuál, jak aplikaci rozběhnout a co je k tomu potřeba udělat.
+
+
+Zadání:
+
+Na twitteru se objevují zprávičky, ve kterých je obsažen odkaz pilulka.cz nebo hashtag #pilulka / #pilulkacz atd.
+
+Chceme zobrazit aktuálně 100 nejnovějších zpráv, které obsahují hashtag / nebo odkaz na pilulka.cz
+
+Ideálně ve formátu json pro API způsob načítání a taktéž v hezkém HTML doplněném o nějakou jednoduchou šablonu (Latte atd) - pro vstup uživatele.
+
+Konfiguraci dát mimo zdrojový kód, aby se dala jednoduše měnit.
+
+Využité postupy / zdroje, prosím taktéž uvést do dokumentace (např. zde se věnuje napojením na API twitteru) atd.
+
+Odkaz na github poté poslat na vyvojari@pilulka.cz
+
+
+Těšíme se na výstup

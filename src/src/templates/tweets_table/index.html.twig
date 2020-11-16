@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block title %}Twitter scraper - table of tweets!{% endblock %}
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">List of tweets</li>
+    </ol>
+</nav>
+{% endblock %}
+{% block body %}
+    <table class="table table-sm">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Created at</th>
+            <th scope="col">Text</th>
+            <th scope="col">User</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if tweets %}
+                {% for tweet in tweets %}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{ tweet.createdAtString }}</td>
+                    <td>{{ tweet.text }}</td>
+                    <td>{{ tweet.user }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="2">No tweets, first setup your credentials, tags and scrape tweets!</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+{% endblock %}

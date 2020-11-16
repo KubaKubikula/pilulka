@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <a href="{{ path('scrape_tweets') }}" class="btn btn-info">Scrape tweets</a>
+        </div>
+    </div>
+    <br><br>
+    <h3>Tags</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if tags %}
+                {% for tag in tags %}
+                <tr>
+                    <td>{{ tag.name }}</td>
+                    <td><a href="{{ path('delete_tag', {tagId: tag.id}) }}">Delete</a></td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="2">No tags inserted yet!</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+    {{ form(tagForm) }}
+    <h3><a target="_blank" href="https://developer.twitter.com/en/portal/dashboard">Twitter credentials</a></h3>
+    {{ form(twitterCredentialsForm) }}
+{% endblock %}
