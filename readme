@@ -1,3 +1,5 @@
+videopopis najdete zde https://youtu.be/xfpjwrY5q-8
+
 Instalace
 
 git clone git@github.com:KubaKubikula/pilulka.git
@@ -17,4 +19,6 @@ a pak se můžu přihlásit jako uživatel pilulka s heslem heslo
 - mít nastavené jaké tagy chceme aby to stáhlo
 - a pak kliknout na tlačítko Scrape Tweets (to se připojí a stáhne tweety které obsahují námi nastavené tagy)
 
-- pak nahoře v menu 
+- pak nahoře v menu list of Tweets
+
+jinak použité technologie a balíčky viz composer
